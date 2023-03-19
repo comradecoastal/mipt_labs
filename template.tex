@@ -1,0 +1,78 @@
+\documentclass[a4paper,12pt]{article} % тип документа
+\usepackage[margin=1in]{geometry} % Поля
+
+%  Русский язык
+\usepackage[warn]{mathtext}
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+%%%
+\usepackage{graphicx}
+
+\usepackage{tabularx}
+
+\usepackage{gensymb} % знак градуса
+\usepackage{enumitem} % изменить список enumerate
+\usepackage{placeins} % \FloatBarrier
+
+\renewcommand{\thesection}{\Roman{section}} 
+\renewcommand{\thesubsection}{\roman{subsection}}
+
+
+\begin{document}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X} %new tabularx
+
+
+%титул
+\hrule 	
+\medskip
+\begin{raggedright}
+{\large \textbf{Отчёт по работе -}}
+\\
+\medskip
+{\Large Название} 
+\\
+\medskip
+{\large Карташов Констанин Б04-005}
+\medskip
+\hrule
+\medskip
+\end{raggedright}
+
+
+\section{Анотация}
+
+\paragraph{Цель работы:} 
+Цель
+
+\paragraph{Оборудование:}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\triangleright$}
+\itemsep0em
+\item итем
+\end{itemize}
+
+
+\medskip\hrule\medskip
+
+\section{Теоретическая часть}
+
+
+\medskip\hrule\medskip
+
+\section{Экспериментальная часть}
+
+
+\medskip\hrule\medskip
+
+\section{Выводы}
+
+
+
+\medskip\hrule\medskip
+
+\end{document}
